@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="main.html">영화 리뷰 세상</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="main.html">홈</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="movie_out.html">영화</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" herf="free_board_out.html">자유게시판</a>
+              </li>   
+            </ul>
+            <button class="btn btn-outline-success" type="button" onclick="location.href='login.html'">로그인</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="join.css" />
+  </head>
+  <body>
+  
+    <header class="join-header">
+      <h1 class="join-header__title">회원가입</h1>
+    </header>
+    <form class="join-form" action="/MovieProject/userjoin.do" method="post">
+      <input type="text" name="uId" placeholder="ID" required /><br />
+      <input type="password" name="uPw" placeholder="PASSWORD" required /><br />
+      <input type="text" name="uName" placeholder="NAME" required /><br />
+      <input type="email" name="uEmail" placeholder="E-MAIL" required /><br />
+      <input type="number" name="uAge" placeholder="AGE" required /><br />
+      <input type="submit" value="회원가입" /><br />
+      <a href="#">
+        <!-- 이거 없어도됨 
+        <input type="button" value="로그인으로 이동" />
+      -->
+      </a>
+    </form>
+  </body>
+</html>
